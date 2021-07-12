@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="index.html" class="w3-bar-item w3-button">HOMEPAGE</a>
+  <a href="covid.html" class="w3-bar-item w3-button">COVID-19</a>
+  <a href="vaccine.html" class="w3-bar-item w3-button">VACCINE</a>
+  <a href="stepvaccine.html" class="w3-bar-item w3-button">VACCINATION PROCEDURE</a>
+  <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+</div>
+
+<div id="main">
+
+<div style="background-color: #26C2E3;" class="main">
+  <button id="openNav" class="w3-button w3-xlarge" style="color: white;" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1 align="center"><u>CUSTOMER SERVICE</u></h1><hr>
+  </div>
+</div>
+<br>
+
+
+<table style="text-align: center;" align="center">
+  <tr>
+    <th><p align="center"><img src="images/kkm.jpg" height="150px" width="230px"></p></th>
+    <th><p>Tel:03-80008000<br>
+        Fax:03-88886187<br>
+        Email:kkm@moh.gov.my<br></p>
+    </th>
+  </tr>
+
+  <tr>
+    <th><p align="center"><img src="images/pdrm.png" height="150px" width="130px"></p></th>
+    <th><p>Tel:03–22662222<br>
+        Fax:03–20707500<br>
+        Email:rmp@rmp.gov.my<br></p>
+  </th>
+
+  <tr>
+    <th><p align="center"><img src="images/jkj.jpg" height="80px" width="230px"></p></th>
+    <th><p>Tel:1800-888-828<br></p>
+  </th>
+
+    <tr>
+    <th><p align="center"><img src="images/bomba.jpg" height="150px" width="130px"></p></th>
+    <th><p>Tel:03-88927600<br>
+           Fax:03-88880025<br>
+           Email:korporat@bomba.gov.my<br></p>
+  </th>
+</table>
+<br>
+<br>
+
+<style>
+
+th, td
+ {
+  text-align: justify;
+  padding: 11px;
+ }
+</style>
+
+
+<div class="w3-container w3-black">
+  <p align="center">For more info about COVID-19 and vaccination program, contact:</p>
+  <p style="text-align: center;"><a href="https://www.moh.gov.my/">MINISTRY OF HEALTH MALAYSIA</a></p>
+  <p style="text-align: center;"><a href="https://www.vaksincovid.gov.my/">MALAYSIA'S NATIONAL COVID-19 IMMUNISATION PROGRAMME</a></p>
+  <h5 align="center">©BASHIRAH,BIBI,FATIHAH,SYAFIQ</h5>
+ 
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+</script>
+
+</div>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</div>
+</body>
+</html>

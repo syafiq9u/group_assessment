@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rubik:wght@300&family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+h1
+		{
+			font-family: 'Fjalla One', sans-serif;
+		}
+h2
+		{
+			font-family: 'Fjalla One', sans-serif;
+		}
+h3
+		{
+			font-family: 'Fjalla One', sans-serif;
+		}
+li
+		{
+			font-family: 'Yanone Kaffeesatz', sans-serif;
+			font-size: 20px;
+		}
+p
+		{
+			font-family: 'Rubik', sans-serif;
+		}
+a:link, a:visited 
+		{
+			background-color: #d3f2f9;
+			color:black;
+			text-decoration: none;
+			padding: 5px;
+			text-align: center;
+			display: inline-table;
+			font-family: 'Fjalla One', sans-serif;
+		}
+
+
+a:hover 
+		{
+			color:black;
+			background-color: white;
+			text-decoration: underline;
+		}
+
+a:active 
+		{
+			color: 	black;
+			background-color: ghostwhite;
+			text-decoration: none;
+		}
+
+.container
+		{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+

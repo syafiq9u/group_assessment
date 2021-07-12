@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>COVID-19</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="index.html" class="w3-bar-item w3-button">HOMEPAGE</a>
+  <a href="covid.html" class="w3-bar-item w3-button">COVID-19</a>
+  <a href="vaccine.html" class="w3-bar-item w3-button">VACCINE</a>
+  <a href="stepvaccine.html" class="w3-bar-item w3-button">VACCINATION PROCEDURE</a>
+  <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+</div>
+
+<div id="main">
+
+<div style="background-color: #26C2E3;" class="main">
+  <button id="openNav" class="w3-button w3-xlarge" style="color: white;" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1 align="center"><u>COVID-19</u></h1><hr>
+  </div>
+</div>
+
+<div class="container">
+  <img src="images/covid5.png" width="100%" align="center" >
+  <div class="centered" style="background-color: lightgrey; opacity: 0.8"><p><b>A continuous occurrence of an unknown acute respiratory tract infection was reported in Wuhan City, Hubei Province, China, since 12th December 2019, originating from the Hunan South China Seafood Market. On the 7th January 2020, Chinese scientists isolated the unknown viral sample from an infected person and sequenced its genome using the next gene sequencing tool. They reported that the virus had 96.3% genetic similarity with a Yunnan bat coronavirus RaTG13 and 70% homology with severe acute respiratory syndrome coronavirus (SARS-CoV). On the 12th January 2020, the World Health Organization (WHO) announced the cause of this epidemic outbreak was a novel coronavirus discovered in 2019 (2019-nCoV) or SARS-CoV-2 and named the disease coronavirus disease 2019 (COVID-19). However, the answer to the origin of SARS-CoV-2 remains to be determined. The SARS-CoV-2 spread rapidly to other countries including South Korea, Taiwan, Thailand, Singapore, Japan, Italy, Iran, Spain, USA, UK and was classified by the WHO as a pandemic on 12th March 2020. As of the 17th April 2020, there are a total of 2,230,439 cases of COVID-19; 150,810 cases of deaths and 564,210 recovered cases have been reported throughout the world . The USA has had the highest number of cases of COVID-19 (686,431) and number of deaths (35,578). There have been 58,179 USA patients who have recovered from COVID-19. On the 17th April 2020, a total of 8,861 new cases and 961 new deaths were reported in USA. The number of cases has increased exponentially in USA, Italy, Spain, UK, Turkey, and Russia.</b></p></div>
+</div>
+
+<style>
+
+.container
+    {
+        position: relative;
+        text-align: center;
+        color: black;
+        text-align: justify;
+
+
+    }
+
+.centered   
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+  
+table 
+    {
+       padding-left: 50px;
+    }
+    
+td, th 
+    {
+      text-align: center;
+      padding-right: 50px;
+      font-family: 'Rubik', sans-serif;
+      font-size: 30px;
+    }
+
+
+
+</style>
+</div>
+
+<h1 align="center">SYMPTOM COVID-19</h1>
+<p align="center">Symptoms of COVID-19 are variable, ranging from mild symptoms to severe illness. Common symptoms include headache, loss of smell and taste, nasal congestion and runny nose, cough, muscle pain, sore throat, fever, diarrhea, and breathing difficulties. People with the same infection may have different symptoms, and their symptoms may change over time.<br>Three common clusters of symptoms have been identified: one respiratory symptom cluster with cough, sputum, shortness of breath, and fever; a musculoskeletal symptom cluster with muscle and joint pain, headache, and fatigue; a cluster of digestive symptoms with abdominal pain, vomiting, and diarrhea. In people without prior ear, nose, and throat disorders, loss of taste combined with loss of smell is associated with COVID-19</p>
+
+<h1 align="center">WORLD DAILY CASES</h1>
+<p style="font-family: font-family: 'Fjalla One', sans-serif;" align="center">Last Updated: 12th of July 2021</p>
+<table align="center">
+<tr>
+<th style="color: purple;">COVID-19 CASES</th>
+<th style="color: red;">DEATHS</th>
+<th style="color: green;">RECOVERED</th>
+</tr>
+<tr>
+<td>187,732,467</td>
+<td>4,051,203</td>
+<td>171,671,079</td>
+</tr>
+</table>
+<br>
+<br>
+<br>
+
+<h2 align="center">MALAYSIA DAILY CASES</h2>
+<p style="font-family: font-family: 'Fjalla One', sans-serif;" align="center">Last Updated: 12th of July 2021</p>
+<p style="text-align: center;"><img src="images/covid6.jpg" width="600px" height="400px"> </p>
+<br>
+
+<div class="w3-container w3-black">
+  <p align="center">For more info about COVID-19 and vaccination program, contact:</p>
+  <p style="text-align: center;"><a href="https://www.moh.gov.my/">MINISTRY OF HEALTH MALAYSIA</a></p>
+  <p style="text-align: center;"><a href="https://www.vaksincovid.gov.my/">MALAYSIA'S NATIONAL COVID-19 IMMUNISATION PROGRAMME</a></p>
+  <h5 align="center">©BASHIRAH,BIBI,FATIHAH,SYAFIQ</h5>
+ 
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+</script>
+
+</div>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</div>
+</body>
+</html>

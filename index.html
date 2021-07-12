@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="index.html" class="w3-bar-item w3-button">HOMEPAGE</a>
+  <a href="covid.html" class="w3-bar-item w3-button">COVID-19</a>
+  <a href="vaccine.html" class="w3-bar-item w3-button">VACCINE</a>
+  <a href="stepvaccine.html" class="w3-bar-item w3-button">VACCINATION PROCEDURE</a>
+  <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+</div>
+
+<div id="main">
+
+<div style="background-color: #26C2E3;" class="main">
+  <button id="openNav" class="w3-button w3-xlarge" style="color: white;" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1 align="center"><u>CORONAVIRUS (COVID-19) DISEASE INFORMATION</u></h1><hr>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides w3-animate-left" src="images/covid1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-right" src="images/covid2.jpg" style="width:100%">
+  <img class="mySlides w3-animate-left" src="images/covid3.jpg" style="width:100%">
+  <img class="mySlides w3-animate-right" src="images/covid4.jpg" style="width:100%">
+</div>
+
+<br>
+<br>
+<br>
+
+<h1 align="center"><u>WHAT IS CORONAVIRUS (COVID-19)</u></h1>
+<div class="container">
+	<p align="center" >Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness. The best way to prevent and slow down transmission is to be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face. The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette<br> (for example, by coughing into a flexed elbow).</p></div>
+
+<div align="center"><h1 align="center"><u>LIST OF PREVENTION</u></h1>
+
+<h3 style="font-size: 20px;" align="center">To prevent infection and to slow transmission of COVID-19, do the following:</h3> 
+
+<ul>
+<h2>If at home:</h2>
+
+	<li>Wear a surgical mask and seek medical attention at the
+	nearest health facility immediately.</li>
+	<li>Avoid contact with family members</li>
+	<li>Accompanying person should also wear a surgical mask.</li>
+
+<h2>If at workplace:</h2> 
+	<li>Relieve staff members from work if they are sick</li>
+	<li>Wear a surgical mask and seek medical attention at the
+	nearest health facility immediately</li>
+	<li>Avoid contact with fellow employees</li>
+	<li>Accompanying person should also wear a surgical mask</li>
+</ul>
+
+<style>
+ ul {
+color: black;
+text-indent: 250px;
+text-align: justify;
+list-style-position: inside;
+line-height: 1cm
+}
+</style>
+</div>
+
+<h1 align="center"><u>WHAT IS VACCINE?</u></h1>
+<p align="center">COVID-19 vaccines are effective at keeping you from getting COVID-19, especially severe illness and death. COVID-19 vaccines reduce the risk of people spreading the virus that causes COVID-19. If you are fully vaccinated, you can resume activities that you did before the pandemic.COVID-19 vaccines are safe and effective. Vaccines cannot give you COVID-19. You may have side effects after vaccination. These are normal and should go away in a few days.</p>
+<br>
+<br>
+
+
+
+<div class="w3-container w3-black">
+  <p align="center">For more info about COVID-19 and vaccination program, contact:</p>
+  <p style="text-align: center;"><a href="https://www.moh.gov.my/">MINISTRY OF HEALTH MALAYSIA</a></p>
+  <p style="text-align: center;"><a href="https://www.vaksincovid.gov.my/">MALAYSIA'S NATIONAL COVID-19 IMMUNISATION PROGRAMME</a></p>
+  <h5 align="center">©BASHIRAH,BIBI,FATIHAH,SYAFIQ</h5>
+ 
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+</script>
+
+</div>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</div>
+</body>
+</html>
